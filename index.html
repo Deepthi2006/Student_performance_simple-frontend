@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Performance Prediction</title>
+</head>
+<body>
+    <form action="/predict" method="post">
+        <table>
+            <tr>
+                <td><h1>Student Performance Prediction</h1></td>
+            </tr>
+            <tr>
+                <td>Hours Studied:</td>
+                <td><input type="number" name="hours_studied" step="0.01" required></td>
+            </tr>
+            <tr>
+                <td>Previous Scores:</td>
+                <td><input type="number" name="previous_scores" step="0.01" required></td>
+            </tr>
+            <tr>
+                <td>Extracurricular (Yes/No):</td>
+                <td><input type="text" name="extracurricular" required></td>
+            </tr>
+            <tr>
+                <td>Sleep Hours:</td>
+                <td><input type="number" name="sleep_hours" step="0.01" required></td>
+            </tr>
+            <tr>
+                <td>Sample Questions Attempted:</td>
+                <td><input type="number" name="sample_papers" step="1" required></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="submit" value="Predict"></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
